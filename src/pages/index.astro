@@ -1,11 +1,591 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const currentYear = new Date().getFullYear();
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of web development projects including custom WordPress themes, CPT architecture, ACF, Elementor builds, and responsive websites."
+    />
+  </head>
+
+  <body>
+    <main class="portfolio-page">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Web Developer Portfolio</p>
+
+          <h1 class="hero__title">
+            I build custom, scalable websites that clients can manage with
+            confidence.
+          </h1>
+
+          <p class="hero__text">
+            Web developer with experience delivering full website projects from
+            discovery and technical planning to development, launch, and client
+            handover.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="button button--primary">View Projects</a>
+            <a
+              href="mailto:your-email@example.com"
+              class="button button--secondary"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <p class="hero__card-label">Core Skills</p>
+
+          <div class="skill-list">
+            <span>Custom WordPress Themes</span>
+            <span>Advanced Custom Fields</span>
+            <span>Custom Post Types</span>
+            <span>WP_Query</span>
+            <span>Elementor</span>
+            <span>Responsive Design</span>
+            <span>Project Delivery</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Selected Work</p>
+          <h2 class="section-heading__title">Featured Projects</h2>
+          <p class="section-heading__text">
+            A selection of websites I developed for businesses and creative
+            brands.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__top">
+              <div>
+                <p class="project-card__label">Freelance Project</p>
+                <h3 class="project-card__title">IT Productions</h3>
+              </div>
+
+              <a
+                href="https://itproductions.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__link"
+              >
+                Visit Site
+              </a>
+            </div>
+
+            <p class="project-card__role">
+              <strong>Role:</strong> Independent Web Developer (Freelance)
+            </p>
+
+            <div class="project-card__content">
+              <p>
+                <strong>Project Overview:</strong> I secured this contract independently
+                and managed the full project lifecycle, from discovery and proposal
+                to launch.
+              </p>
+
+              <p>
+                <strong>The Challenge:</strong> Build a scalable website for a creative
+                production company with complex content relationships.
+              </p>
+
+              <p>
+                <strong>Technical Solution:</strong> Developed a fully custom WordPress
+                theme from scratch. Engineered a complex architecture using Custom
+                Post Types and Advanced Custom Fields for Shows, Auditions, and Team/Actors.
+              </p>
+
+              <p>
+                <strong>Key Feature:</strong> Implemented relational database logic
+                where actors are linked to specific shows through the admin panel.
+                Used custom WP_Query logic to dynamically display the correct cast
+                members on each individual show page.
+              </p>
+
+              <p>
+                <strong>Outcome:</strong> Delivered an easy-to-manage platform that
+                allows the client to update their website without touching a line
+                of code.
+              </p>
+            </div>
+
+            <div class="project-card__tags">
+              <span>WordPress</span>
+              <span>Custom Theme</span>
+              <span>CPT</span>
+              <span>ACF</span>
+              <span>WP_Query</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <div>
+                <p class="project-card__label">Agency Project</p>
+                <h3 class="project-card__title">Hotline Apparel</h3>
+              </div>
+
+              <a
+                href="https://hotlineapparel.ca"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__link"
+              >
+                Visit Site
+              </a>
+            </div>
+
+            <p class="project-card__role">
+              <strong>Role:</strong> Developed as a Web Developer at SecurIBC
+            </p>
+
+            <div class="project-card__content">
+              <p>
+                <strong>Project Overview:</strong> I managed this project from the
+                initial agency-client discovery sessions through to the final technical
+                handover.
+              </p>
+
+              <p>
+                <strong>The Highlight:</strong> I translated the client’s vision into
+                a bold, modern digital identity that resonates with their target audience.
+              </p>
+
+              <p>
+                <strong>Technical Execution:</strong> Developed using Elementor to
+                ensure rapid deployment and a highly visual layout. Managed requirements
+                gathering, asset optimization, responsive development, and final launch.
+              </p>
+
+              <p>
+                <strong>Outcome:</strong> Delivered a visually striking, responsive
+                website that significantly improved the brand’s online presence.
+              </p>
+            </div>
+
+            <div class="project-card__tags">
+              <span>WordPress</span>
+              <span>Elementor</span>
+              <span>Responsive Design</span>
+              <span>Asset Optimization</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <div>
+                <p class="project-card__label">Agency Project</p>
+                <h3 class="project-card__title">Carrier Auto Centre</h3>
+              </div>
+
+              <a
+                href="https://carrierautocentre.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__link"
+              >
+                Visit Site
+              </a>
+            </div>
+
+            <p class="project-card__role">
+              <strong>Role:</strong> Developed as a Web Developer at SecurIBC
+            </p>
+
+            <div class="project-card__content">
+              <p>
+                <strong>Project Overview:</strong> Working within the agency team,
+                I took full ownership of the technical implementation and the design
+                strategy for the site’s internal architecture, ensuring a consistent
+                and user-friendly experience across all service categories.
+              </p>
+
+              <p>
+                <strong>Contribution:</strong> While the homepage design was provided,
+                I was responsible for the entire technical development and the design
+                of all internal service pages.
+              </p>
+
+              <p>
+                <strong>Technical Solution:</strong> Created a scalable system for
+                Service Pages using Custom Post Types, allowing the client to independently
+                add and manage automotive services through a simplified admin interface.
+              </p>
+            </div>
+
+            <div class="project-card__tags">
+              <span>WordPress</span>
+              <span>CPT</span>
+              <span>Service Pages</span>
+              <span>UX Structure</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© {currentYear} Web Developer Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :root {
+    --color-bg: #f6f8f5;
+    --color-surface: #ffffff;
+    --color-surface-soft: #eef4ec;
+    --color-text: #152019;
+    --color-text-muted: #5f6f65;
+    --color-primary: #2f7d4f;
+    --color-primary-dark: #215a39;
+    --color-border: #dce7dc;
+    --color-shadow: rgba(21, 32, 25, 0.08);
+
+    --font-main:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 32px;
+
+    --container: 1180px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background:
+      radial-gradient(
+        circle at top left,
+        rgba(47, 125, 79, 0.14),
+        transparent 34rem
+      ),
+      var(--color-bg);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .portfolio-page {
+    width: min(100% - 2rem, var(--container));
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: 2rem;
+    align-items: stretch;
+    min-height: 78vh;
+  }
+
+  .hero__content,
+  .hero__card,
+  .project-card,
+  .cta {
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 24px 60px var(--color-shadow);
+    backdrop-filter: blur(18px);
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: var(--radius-lg);
+    padding: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  .hero__eyebrow,
+  .section-heading__eyebrow,
+  .project-card__label,
+  .hero__card-label,
+  .cta__eyebrow {
+    margin: 0 0 0.9rem;
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .hero__title {
+    max-width: 840px;
+    margin: 0;
+    font-size: clamp(2.6rem, 4vw, 5.9rem);
+    line-height: 0.95;
+    letter-spacing: -0.07em;
+  }
+
+  .hero__text {
+    max-width: 680px;
+    margin: 1.6rem 0 0;
+    color: var(--color-text-muted);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.7;
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.85rem 1.35rem;
+    border-radius: 999px;
+    font-weight: 800;
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      background-color 180ms ease;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .button--primary {
+    color: #ffffff;
+    background: var(--color-primary);
+    box-shadow: 0 16px 34px rgba(47, 125, 79, 0.28);
+  }
+
+  .button--primary:hover {
+    background: var(--color-primary-dark);
+  }
+
+  .button--secondary {
+    color: var(--color-text);
+    background: var(--color-surface-soft);
+  }
+
+  .hero__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(47, 125, 79, 0.12),
+        rgba(255, 255, 255, 0.92)
+      ),
+      var(--color-surface);
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+
+  .skill-list span,
+  .project-card__tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text-muted);
+    background: var(--color-surface);
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .projects {
+    padding: 6rem 0 0;
+  }
+
+  .section-heading {
+    max-width: 720px;
+    margin-bottom: 2rem;
+  }
+
+  .section-heading__title {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+  }
+
+  .section-heading__text {
+    margin: 1rem 0 0;
+    color: var(--color-text-muted);
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .projects__grid {
+    display: grid;
+    gap: 1.3rem;
+  }
+
+  .project-card {
+    border-radius: var(--radius-md);
+    padding: clamp(1.4rem, 3vw, 2rem);
+  }
+
+  .project-card__top {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+
+  .project-card__title {
+    margin: 0;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .project-card__link {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    color: var(--color-primary-dark);
+    background: var(--color-surface-soft);
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .project-card__role {
+    margin: 0 0 1.4rem;
+    color: var(--color-text-muted);
+  }
+
+  .project-card__content {
+    display: grid;
+    gap: 0.95rem;
+  }
+
+  .project-card__content p {
+    margin: 0;
+    color: var(--color-text-muted);
+    line-height: 1.75;
+  }
+
+  .project-card__content strong {
+    color: var(--color-text);
+  }
+
+  .project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .cta {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: var(--radius-lg);
+  }
+
+  .cta__title {
+    max-width: 720px;
+    margin: 0;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+  }
+
+  .footer {
+    width: min(100% - 2rem, var(--container));
+    margin: 0 auto;
+    padding: 0 0 2rem;
+    color: var(--color-text-muted);
+    font-size: 0.92rem;
+  }
+
+  @media (max-width: 900px) {
+    .portfolio-page {
+      padding-top: 1rem;
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero__content,
+    .hero__card {
+      border-radius: 24px;
+    }
+
+    .cta {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .portfolio-page {
+      width: min(100% - 1rem, var(--container));
+    }
+
+    .hero__content,
+    .hero__card,
+    .project-card,
+    .cta {
+      padding: 1.2rem;
+    }
+
+    .hero__actions,
+    .button {
+      width: 100%;
+    }
+
+    .project-card__top {
+      flex-direction: column;
+    }
+
+    .project-card__link {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
