@@ -1,16 +1,24 @@
 ---
 const currentYear = new Date().getFullYear();
+
+import "../style.css";
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Developer Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Viktoriia Matviieva | WordPress Developer Portfolio</title>
+
     <meta
       name="description"
-      content="Portfolio of web development projects including custom WordPress themes, CPT architecture, ACF, Elementor builds, and responsive websites."
+      content="WordPress developer portfolio featuring custom themes, Elementor websites, ACF, Custom Post Types, responsive development, SEO, and website performance work."
     />
   </head>
 
@@ -18,26 +26,28 @@ const currentYear = new Date().getFullYear();
     <main class="portfolio-page">
       <section class="hero">
         <div class="hero__content">
-          <p class="hero__eyebrow">Web Developer Portfolio</p>
+          <p class="hero__eyebrow">WordPress Developer Portfolio</p>
 
           <h1 class="hero__title">
-            I build custom, scalable websites that clients can manage with
-            confidence.
+            Hi, I’m Viktoriia. I’m a web developer currently working with WordPress and Astro.
           </h1>
 
           <p class="hero__text">
-            Web developer with experience delivering full website projects from
-            discovery and technical planning to development, launch, and client
-            handover.
+            I build websites from design and planning through development, testing, and launch. Most of my recent work includes custom WordPress themes, Elementor, ACF, Custom Post Types, and Astro projects. I also have experience with React, React Native, TypeScript, PHP, and other front-end technologies.
           </p>
 
           <div class="hero__actions">
-            <a href="#projects" class="button button--primary">View Projects</a>
+            <a href="#projects" class="button button--primary">
+              View Projects
+            </a>
+
             <a
-              href="mailto:vika030718@gmail.com"
+              href={`${base}ViktoriiaMatviieva_WordPress_Developer.pdf`}
               class="button button--secondary"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contact Me
+              View Resume
             </a>
           </div>
         </div>
@@ -46,546 +56,548 @@ const currentYear = new Date().getFullYear();
           <p class="hero__card-label">Core Skills</p>
 
           <div class="skill-list">
+            <span>WordPress</span>
             <span>Custom WordPress Themes</span>
+            <span>Elementor</span>
             <span>Advanced Custom Fields</span>
             <span>Custom Post Types</span>
             <span>WP_Query</span>
-            <span>Elementor</span>
-            <span>Responsive Design</span>
-            <span>Project Delivery</span>
+          
+            <span>Astro</span>
+            <span>React</span>
+            <span>React Native</span>
+            <span>Redux</span>
+            <span>TypeScript</span>
+            <span>JavaScript ES6</span>
+            <span>PHP</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+
+          
+            <span>Responsive Development</span>
+            <span>Figma to Code</span>
+  
+          
+            <span>SEO</span>
+            <span>Website Performance</span>
+            <span>Accessibility</span>
+          
+            <span>Google Analytics 4</span>
+            <span>Google Search Console</span>
+          
+            <span>Git</span>
+          
+            <span>AI-Assisted Development</span>
+            <span>Cursor AI</span>
           </div>
         </div>
       </section>
 
       <section class="projects" id="projects">
         <div class="section-heading">
-          <p class="section-heading__eyebrow">Selected Work</p>
-          <h2 class="section-heading__title">Featured Projects</h2>
+          <p class="section-heading__eyebrow">My Work</p>
+
+          <h2 class="section-heading__title">
+            Recent Projects
+          </h2>
+
           <p class="section-heading__text">
-            A selection of websites I developed for businesses and creative
-            brands.
+            A few websites I have designed and developed.
           </p>
         </div>
 
         <div class="projects__grid">
+         
+        
+          <!-- HOTLINE APPAREL -->
+        
           <article class="project-card">
-            <div class="project-card__top">
-              <div>
-                <p class="project-card__label">Freelance Project</p>
-                <h3 class="project-card__title">IT Productions</h3>
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <div>
+                  <p class="project-card__label">Agency Project</p>
+                  <h3 class="project-card__title">Hotline Apparel</h3>
+                </div>
+        
+                <a
+                  href="https://hotlineapparel.ca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-card__link"
+                >
+                  Visit Site
+                </a>
               </div>
-
-              <a
-                href="https://itproductions.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card__link"
-              >
-                Visit Site
-              </a>
-            </div>
-
-            <p class="project-card__role">
-              <strong>Role:</strong> Independent Web Developer (Freelance)
-            </p>
-
-            <div class="project-card__content">
-              <p>
-                <strong>Project Overview:</strong> I secured this contract independently
-                and managed the full project lifecycle, from discovery and proposal
-                to launch.
+        
+              <p class="project-card__role">
+                <strong>Role:</strong> Web Developer at SecurIBC
               </p>
-
-              <p>
-                <strong>The Challenge:</strong> Build a scalable website for a creative
-                production company with complex content relationships.
-              </p>
-
-              <p>
-                <strong>Technical Solution:</strong> Developed a fully custom WordPress
-                theme from scratch. Engineered a complex architecture using Custom
-                Post Types and Advanced Custom Fields for Shows, Auditions, and Team/Actors.
-              </p>
-
-              <p>
-                <strong>Key Feature:</strong> Implemented relational database logic
-                where actors are linked to specific shows through the admin panel.
-                Used custom WP_Query logic to dynamically display the correct cast
-                members on each individual show page.
-              </p>
-
-              <p>
-                <strong>Outcome:</strong> Delivered an easy-to-manage platform that
-                allows the client to update their website without touching a line
-                of code.
-              </p>
-            </div>
-
-            <div class="project-card__tags">
-              <span>WordPress</span>
-              <span>Custom Theme</span>
-              <span>CPT</span>
-              <span>ACF</span>
-              <span>WP_Query</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__top">
-              <div>
-                <p class="project-card__label">Agency Project</p>
-                <h3 class="project-card__title">Hotline Apparel</h3>
+        
+              <div class="project-card__content">
+                <p>
+                  <strong>Client Goal:</strong>
+                  Replace an outdated website with a modern design that clearly
+                  explains custom printing and embroidery services to different types
+                  of customers.
+                </p>
+        
+                <p>
+                  <strong>Challenge:</strong>
+                  The existing website had very little content, and the client was still
+                  deciding how the company should be presented online. Existing page
+                  URLs also needed to be preserved during the rebuild.
+                </p>
+        
+                <p>
+                  <strong>Approach:</strong>
+                  I worked directly with the client through several discovery sessions,
+                  planned the content and page structure, and created wireframes.
+                  Elementor was chosen for its flexible visual layouts and because it
+                  allows the client to update page content more easily after launch.
+                </p>
+        
+                <p>
+                  <strong>Result:</strong>
+                  I rebuilt the website from scratch, created the responsive layouts,
+                  optimized the images, and added redirects for old URLs. The finished
+                  site has a stronger visual style and presents the company’s services
+                  more clearly.
+                </p>
               </div>
-
-              <a
-                href="https://hotlineapparel.ca"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card__link"
-              >
-                Visit Site
-              </a>
-            </div>
-
-            <p class="project-card__role">
-              <strong>Role:</strong> Developed as a Web Developer at SecurIBC
-            </p>
-
-            <div class="project-card__content">
-              <p>
-                <strong>Project Overview:</strong> I managed this project from the
-                initial agency-client discovery sessions through to the final technical
-                handover.
-              </p>
-
-              <p>
-                <strong>The Highlight:</strong> I translated the client’s vision into
-                a bold, modern digital identity that resonates with their target audience.
-              </p>
-
-              <p>
-                <strong>Technical Execution:</strong> Developed using Elementor to
-                ensure rapid deployment and a highly visual layout. Managed requirements
-                gathering, asset optimization, responsive development, and final launch.
-              </p>
-
-              <p>
-                <strong>Outcome:</strong> Delivered a visually striking, responsive
-                website that significantly improved the brand’s online presence.
-              </p>
-            </div>
-
-            <div class="project-card__tags">
-              <span>WordPress</span>
-              <span>Elementor</span>
-              <span>Responsive Design</span>
-              <span>Asset Optimization</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__top">
-              <div>
-                <p class="project-card__label">Agency Project</p>
-                <h3 class="project-card__title">Carrier Auto Centre</h3>
+        
+              <div class="project-card__tags">
+                <span>Client Discovery</span>
+                <span>Requirements Gathering</span>
+                <span>Content Planning</span>
+                <span>Wireframing</span>
+                <span>WordPress</span>
+                <span>Elementor</span>
+                <span>Figma</span>
+                <span>Responsive Design</span>
+                <span>Image Optimization</span>
+                <span>URL Redirects</span>
+                <span>Cross-Browser Testing</span>
               </div>
-
-              <a
-                href="https://carrierautocentre.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card__link"
-              >
-                Visit Site
-              </a>
             </div>
-
-            <p class="project-card__role">
-              <strong>Role:</strong> Developed as a Web Developer at SecurIBC
-            </p>
-
-            <div class="project-card__content">
-              <p>
-                <strong>Project Overview:</strong> Working within the agency team,
-                I took full ownership of the technical implementation and the design
-                strategy for the site’s internal architecture, ensuring a consistent
-                and user-friendly experience across all service categories.
-              </p>
-
-              <p>
-                <strong>Contribution:</strong> While the homepage design was provided,
-                I was responsible for the entire technical development and the design
-                of all internal service pages.
-              </p>
-
-              <p>
-                <strong>Technical Solution:</strong> Created a scalable system for
-                Service Pages using Custom Post Types, allowing the client to independently
-                add and manage automotive services through a simplified admin interface.
-              </p>
-            </div>
-
-            <div class="project-card__tags">
-              <span>WordPress</span>
-              <span>CPT</span>
-              <span>Service Pages</span>
-              <span>UX Structure</span>
-            </div>
+        
+            <a
+              href="https://hotlineapparel.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-card__image-link"
+              aria-label="Visit the Hotline Apparel website"
+            >
+              <img
+              src={`${base}Hotline.webp`}
+                alt="Hotline Apparel website preview placeholder"
+                class="project-card__image"
+                width="800"
+                height="1000"
+                loading="lazy"
+              />
+            </a>
           </article>
+        
+          <!-- CARRIER AUTO CENTRE -->
+        
+
+<article class="project-card">
+  <div class="project-card__body">
+    <div class="project-card__top">
+      <div>
+        <p class="project-card__label">Agency Project</p>
+        <h3 class="project-card__title">Carrier Auto Centre</h3>
+      </div>
+
+      <a
+        href="https://carrierautocentre.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card__link"
+      >
+        Visit Site
+      </a>
+    </div>
+
+    <p class="project-card__role">
+      <strong>Role:</strong> Web Developer at SecurIBC
+    </p>
+
+    <div class="project-card__content">
+      <p>
+        <strong>Client Goal:</strong>
+        Build a professional automotive website with a strong SEO foundation
+        and clear pages for each service the company provides.
+      </p>
+
+      <p>
+        <strong>Challenge:</strong>
+        The homepage design was provided, but the rest of the website still
+        needed to be designed and developed. The client also needed a simple
+        way to manage a growing number of automotive service pages.
+      </p>
+
+      <p>
+        <strong>Approach:</strong>
+        I developed a fully custom WordPress theme without using a page builder.
+        This gave me more control over the HTML structure, performance, and
+        technical SEO. I also designed the internal pages and created a Custom
+        Post Type for managing services.
+      </p>
+
+      <p>
+        <strong>Result:</strong>
+        The client received a fast, responsive website with consistent service
+        pages and a cleaner technical foundation for SEO. New services can be
+        added and updated directly through the WordPress dashboard.
+      </p>
+    </div>
+
+    <div class="project-card__tags">
+      <span>WordPress</span>
+      <span>Custom Theme</span>
+      <span>PHP</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Custom Post Types</span>
+      <span>SEO</span>
+      <span>Performance Optimization</span>
+      <span>Responsive Design</span>
+    </div>
+  </div>
+
+  <a
+    href="https://carrierautocentre.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-card__image-link"
+    aria-label="Visit the Carrier Auto Centre website"
+  >
+    <img
+    src={`${base}Carrier.webp`}
+      alt="Carrier Auto Centre website preview placeholder"
+      class="project-card__image"
+      width="800"
+      height="1000"
+      loading="lazy"
+    />
+  </a>
+</article>
+<!-- GARY HUNTER LAW -->
+
+<article class="project-card">
+  <div class="project-card__body">
+    <div class="project-card__top">
+      <div>
+        <p class="project-card__label">Agency Project</p>
+        <h3 class="project-card__title">Gary Hunter Law</h3>
+      </div>
+
+      <a
+        href="https://garyhunterlaw.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card__link"
+      >
+        Visit Site
+      </a>
+    </div>
+
+    <p class="project-card__role">
+      <strong>Role:</strong> Web Developer at SecurIBC
+    </p>
+
+    <div class="project-card__content">
+      <p>
+        <strong>Client Goal:</strong>
+        Create a professional website that reflects the firm’s legal services and
+        allows the team to update the content themselves after launch.
+      </p>
+    
+      <p>
+        <strong>Challenge:</strong>
+        The law firm had separated from another business, but Google and several
+        online directories still treated them as one company. Old business names,
+        listings, and website references had to be found and corrected.
+      </p>
+    
+      <p>
+        <strong>Approach:</strong>
+        I designed and built the website in WordPress using Elementor, giving the
+        client an easier way to update pages and content. I also optimized the
+        Elementor build for page speed, accessibility, responsive performance, and
+        technical SEO.
+      </p>
+    
+      <p>
+        I reviewed online business listings, found outdated references, and
+        contacted directory owners to update the business name, website, and company
+        information.
+      </p>
+    
+      <p>
+        <strong>Result:</strong>
+        The new website gives the firm a clear and professional online presence.
+        Google now recognizes it as a separate business, relevant keyword visibility
+        is growing, and the site performs well in search.
+      </p>
+  
+    </div>
+
+    <div class="project-card__performance">
+      <p class="project-card__performance-title">
+        <strong>Performance:</strong>
+        Optimized WordPress and Elementor build with strong Lighthouse results.
+      </p>
+    
+      <a
+        href="https://pagespeed.web.dev/analysis/https-garyhunterlaw-com/89ogk1e64b?form_factor=desktop"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card__performance-link"
+        aria-label="Open the Gary Hunter Law PageSpeed Insights report"
+      >
+        <img
+        src={`${base}gary-hunter-law-lighthouse.png`}
+          alt="Lighthouse results: 99 Performance, 97 Accessibility, 96 Best Practices, and 92 SEO"
+          class="project-card__performance-image"
+          width="671"
+          height="106"
+          loading="lazy"
+        />
+    
+      </a>
+    </div>
+
+
+
+    <div class="project-card__tags">
+      <span>WordPress</span>
+      <span>Elementor</span>
+      <span>Web Design</span>
+      <span>Client Discovery</span>
+      <span>Content Planning</span>
+      <span>Local SEO</span>
+      <span>Technical SEO</span>
+      <span>Business Listing Cleanup</span>
+      <span>Directory Outreach</span>
+      <span>Performance Optimization</span>
+      <span>Accessibility</span>
+      <span>Core Web Vitals</span>
+      <span>Responsive Design</span>
+    </div>
+  </div>
+
+  <a
+    href="https://garyhunterlaw.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-card__image-link"
+    aria-label="Visit the Gary Hunter Law website"
+  >
+    <img
+    src={`${base}Gary-Hunter-Law.webp`}
+      alt="Gary Hunter Law website preview placeholder"
+      class="project-card__image"
+      width="800"
+      height="1000"
+      loading="lazy"
+    />
+  </a>
+</article>
+
+ <!-- IT PRODUCTIONS -->
+        
+ <article class="project-card">
+  <div class="project-card__body">
+    <div class="project-card__top">
+      <div>
+        <p class="project-card__label">Freelance Project</p>
+        <h3 class="project-card__title">IT Productions</h3>
+      </div>
+
+      <a
+        href="https://itproductions.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card__link"
+      >
+        Visit Site
+      </a>
+    </div>
+
+    <p class="project-card__role">
+      <strong>Role:</strong> Freelance WordPress Developer
+    </p>
+
+    <div class="project-card__content">
+      <p>
+        <strong>Client Goal:</strong>
+        Create a website where a nonprofit theatre company could manage its
+        shows, auditions, actors, and team members.
+      </p>
+
+      <p>
+        <strong>Challenge:</strong>
+        The project had a limited nonprofit budget but required several
+        connected content types and an admin area that would be simple for the
+        client to use.
+      </p>
+
+      <p>
+        <strong>Approach:</strong>
+        I managed the project from the first client meetings through launch
+        and developed a custom WordPress theme. I used Custom Post Types, ACF,
+        and custom WP_Query logic to connect actors with individual shows.
+      </p>
+
+      <p>
+        <strong>Result:</strong>
+        The client can add and update shows, auditions, actors, and team
+        members without editing the website code.
+      </p>
+    </div>
+
+    <div class="project-card__tags">
+      <span>Client Discovery</span>
+      <span>Requirements Gathering</span>
+      <span>Content Planning</span>
+      <span>WordPress</span>
+      <span>Custom Theme</span>
+      <span>PHP</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Custom Post Types</span>
+      <span>ACF</span>
+      <span>WP_Query</span>
+    </div>
+  </div>
+
+  <a
+    href="https://itproductions.org"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-card__image-link"
+    aria-label="Visit the IT Productions website"
+  >
+    <img
+    src={`${base}IT-Productions.webp`}
+      alt="IT Productions website preview placeholder"
+      class="project-card__image"
+      width="800"
+      height="1000"
+      loading="lazy"
+    />
+  </a>
+</article>
+<!-- 3D MECHANICAL -->
+
+<article class="project-card">
+  <div class="project-card__body">
+    <div class="project-card__top">
+      <div>
+        <p class="project-card__label">Ongoing Agency Project</p>
+        <h3 class="project-card__title">3D Mechanical</h3>
+      </div>
+
+      <a
+        href="https://3dmechanical.ca/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card__link"
+      >
+        Visit Site
+      </a>
+    </div>
+
+    <p class="project-card__role">
+      <strong>Role:</strong> Web Developer at SecurIBC
+    </p>
+
+    <div class="project-card__content">
+      <p>
+        <strong>Client Goal:</strong>
+        Improve the company’s search visibility and attract larger commercial
+        and industrial projects rather than residential enquiries.
+      </p>
+
+      <p>
+        <strong>Challenge:</strong>
+        The original website was very general and did not clearly explain the
+        company’s industrial capabilities. The client initially wanted to focus
+        only on SEO and was hesitant to change the website structure, content,
+        or design.
+      </p>
+
+      <p>
+        <strong>Approach:</strong>
+        I explained why SEO improvements also required clearer content and
+        stronger positioning. Working within a limited budget, I reorganized the
+        website around industrial services and target industries, removed
+        residential messaging, and updated the design to better reflect the
+        scale of the company’s work.
+      </p>
+
+      <p>
+        I used a combination of custom WordPress development and Elementor,
+        depending on the needs of each page. The current phase of the project is
+        focused on technical SEO, service content, keyword targeting, and
+        continued search optimization.
+      </p>
+
+      <p>
+        <strong>Progress:</strong>
+        The website now presents 3D Mechanical as an industrial B2B company and
+        is more closely aligned with the type of projects they want. Search
+        visibility has improved, and the site is appearing less often for
+        residential and small consumer-focused searches.
+      </p>
+    </div>
+
+    <div class="project-card__tags">
+      <span>WordPress</span>
+      <span>Custom Theme</span>
+      <span>Elementor</span>
+      <span>SEO Strategy</span>
+      <span>Technical SEO</span>
+      <span>Keyword Targeting</span>
+      <span>Content Strategy</span>
+      <span>Content Restructuring</span>
+      <span>B2B Positioning</span>
+      <span>Information Architecture</span>
+      <span>Responsive Design</span>
+      <span>Ongoing Optimization</span>
+    </div>
+  </div>
+
+  <a
+    href="https://3dmechanical.ca/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-card__image-link"
+    aria-label="Visit the 3D Mechanical website"
+  >
+    <img
+    src={`${base}3D.webp`}
+      alt="3D Mechanical industrial metal fabrication website"
+      class="project-card__image"
+      width="1200"
+      height="2000"
+      loading="lazy"
+    />
+  </a>
+</article>
+
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© {currentYear} Web Developer Portfolio. All rights reserved.</p>
+      <p>
+        © {currentYear} Viktoriia Matviieva. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
-
-<style>
-  :root {
-    --color-bg: #f6f8f5;
-    --color-surface: #ffffff;
-    --color-surface-soft: #eef4ec;
-    --color-text: #152019;
-    --color-text-muted: #5f6f65;
-    --color-primary: #2f7d4f;
-    --color-primary-dark: #215a39;
-    --color-border: #dce7dc;
-    --color-shadow: rgba(21, 32, 25, 0.08);
-
-    --font-main:
-      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", sans-serif;
-
-    --radius-sm: 12px;
-    --radius-md: 20px;
-    --radius-lg: 32px;
-
-    --container: 1180px;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    margin: 0;
-    font-family: var(--font-main);
-    color: var(--color-text);
-    background:
-      radial-gradient(
-        circle at top left,
-        rgba(47, 125, 79, 0.14),
-        transparent 34rem
-      ),
-      var(--color-bg);
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .portfolio-page {
-    width: min(100% - 2rem, var(--container));
-    margin: 0 auto;
-    padding: 4rem 0;
-  }
-
-  .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-    gap: 2rem;
-    align-items: stretch;
-    min-height: 78vh;
-  }
-
-  .hero__content,
-  .hero__card,
-  .project-card,
-  .cta {
-    background: rgba(255, 255, 255, 0.82);
-    border: 1px solid var(--color-border);
-    box-shadow: 0 24px 60px var(--color-shadow);
-    backdrop-filter: blur(18px);
-  }
-
-  .hero__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: var(--radius-lg);
-    padding: clamp(2rem, 5vw, 4.5rem);
-  }
-
-  .hero__eyebrow,
-  .section-heading__eyebrow,
-  .project-card__label,
-  .hero__card-label,
-  .cta__eyebrow {
-    margin: 0 0 0.9rem;
-    color: var(--color-primary);
-    font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-  .hero__title {
-    max-width: 840px;
-    margin: 0;
-    font-size: clamp(2.6rem, 4vw, 5.9rem);
-    line-height: 0.95;
-    letter-spacing: -0.07em;
-  }
-
-  .hero__text {
-    max-width: 680px;
-    margin: 1.6rem 0 0;
-    color: var(--color-text-muted);
-    font-size: clamp(1.05rem, 2vw, 1.25rem);
-    line-height: 1.7;
-  }
-
-  .hero__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 48px;
-    padding: 0.85rem 1.35rem;
-    border-radius: 999px;
-    font-weight: 800;
-    transition:
-      transform 180ms ease,
-      box-shadow 180ms ease,
-      background-color 180ms ease;
-  }
-
-  .button:hover {
-    transform: translateY(-2px);
-  }
-
-  .button--primary {
-    color: #ffffff;
-    background: var(--color-primary);
-    box-shadow: 0 16px 34px rgba(47, 125, 79, 0.28);
-  }
-
-  .button--primary:hover {
-    background: var(--color-primary-dark);
-  }
-
-  .button--secondary {
-    color: var(--color-text);
-    background: var(--color-surface-soft);
-  }
-
-  .hero__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    background:
-      linear-gradient(
-        145deg,
-        rgba(47, 125, 79, 0.12),
-        rgba(255, 255, 255, 0.92)
-      ),
-      var(--color-surface);
-  }
-
-  .skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-  }
-
-  .skill-list span,
-  .project-card__tags span {
-    display: inline-flex;
-    align-items: center;
-    min-height: 34px;
-    padding: 0.45rem 0.8rem;
-    border: 1px solid var(--color-border);
-    border-radius: 999px;
-    color: var(--color-text-muted);
-    background: var(--color-surface);
-    font-size: 0.88rem;
-    font-weight: 700;
-  }
-
-  .projects {
-    padding: 6rem 0 0;
-  }
-
-  .section-heading {
-    max-width: 720px;
-    margin-bottom: 2rem;
-  }
-
-  .section-heading__title {
-    margin: 0;
-    font-size: clamp(2rem, 4vw, 3.4rem);
-    line-height: 1;
-    letter-spacing: -0.045em;
-  }
-
-  .section-heading__text {
-    margin: 1rem 0 0;
-    color: var(--color-text-muted);
-    font-size: 1.08rem;
-    line-height: 1.7;
-  }
-
-  .projects__grid {
-    display: grid;
-    gap: 1.3rem;
-  }
-
-  .project-card {
-    border-radius: var(--radius-md);
-    padding: clamp(1.4rem, 3vw, 2rem);
-  }
-
-  .project-card__top {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 1.2rem;
-  }
-
-  .project-card__title {
-    margin: 0;
-    font-size: clamp(1.6rem, 3vw, 2.4rem);
-    line-height: 1;
-    letter-spacing: -0.04em;
-  }
-
-  .project-card__link {
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    min-height: 40px;
-    padding: 0.65rem 1rem;
-    border-radius: 999px;
-    color: var(--color-primary-dark);
-    background: var(--color-surface-soft);
-    font-size: 0.9rem;
-    font-weight: 800;
-  }
-
-  .project-card__role {
-    margin: 0 0 1.4rem;
-    color: var(--color-text-muted);
-  }
-
-  .project-card__content {
-    display: grid;
-    gap: 0.95rem;
-  }
-
-  .project-card__content p {
-    margin: 0;
-    color: var(--color-text-muted);
-    line-height: 1.75;
-  }
-
-  .project-card__content strong {
-    color: var(--color-text);
-  }
-
-  .project-card__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 1.5rem;
-  }
-
-  .cta {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5rem;
-    padding: clamp(1.5rem, 4vw, 2.5rem);
-    border-radius: var(--radius-lg);
-  }
-
-  .cta__title {
-    max-width: 720px;
-    margin: 0;
-    font-size: clamp(1.8rem, 3vw, 3rem);
-    line-height: 1.05;
-    letter-spacing: -0.045em;
-  }
-
-  .footer {
-    width: min(100% - 2rem, var(--container));
-    margin: 0 auto;
-    padding: 0 0 2rem;
-    color: var(--color-text-muted);
-    font-size: 0.92rem;
-  }
-
-  @media (max-width: 900px) {
-    .portfolio-page {
-      padding-top: 1rem;
-    }
-
-    .hero {
-      grid-template-columns: 1fr;
-      min-height: auto;
-    }
-
-    .hero__content,
-    .hero__card {
-      border-radius: 24px;
-    }
-
-    .cta {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .portfolio-page {
-      width: min(100% - 1rem, var(--container));
-    }
-
-    .hero__content,
-    .hero__card,
-    .project-card,
-    .cta {
-      padding: 1.2rem;
-    }
-
-    .hero__actions,
-    .button {
-      width: 100%;
-    }
-
-    .project-card__top {
-      flex-direction: column;
-    }
-
-    .project-card__link {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-</style>

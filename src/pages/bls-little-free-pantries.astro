@@ -1,0 +1,660 @@
+---
+const project = {
+  title: "BL’s Little Free Pantries",
+  role: "UX/UI Designer, Developer and Content Creator",
+  team: "BL’s Leadership Team",
+  tools: "Figma, WordPress",
+  release: "December 2024",
+  image:
+    "https://mytrion.ca/wp-content/uploads/2024/11/front-view-notebook-cup-coffee-inspiration-mock-up-concept-2-1024x554.jpg",
+};
+
+const skills = [
+  "UX Research",
+  "Information Architecture",
+  "Wireframe",
+  "UI Design",
+  "Prototype",
+  "Content Creation",
+  "Web Development",
+  "Collaboration",
+  "SEO",
+];
+
+const images = {
+  hero: "https://mytrion.ca/wp-content/uploads/2024/11/front-view-notebook-cup-coffee-inspiration-mock-up-concept-2-1024x554.jpg",
+
+  personas: [
+    "https://mytrion.ca/wp-content/uploads/2024/11/Screenshot-2024-11-29-at-09.38.48-1024x459.png",
+    "https://mytrion.ca/wp-content/uploads/2024/11/Screenshot-2024-11-29-at-09.38.31-1024x467.png",
+    "https://mytrion.ca/wp-content/uploads/2024/11/Screenshot-2024-11-29-at-09.38.06-1024x463.png",
+  ],
+
+  journeyMap: "https://mytrion.ca/wp-content/uploads/2024/11/Table-1.jpg",
+
+  informationArchitecture:
+    "https://mytrion.ca/wp-content/uploads/2024/11/Screenshot-2024-11-24-at-20.26.35-1024x663.png",
+
+  paperWireframes:
+    "https://mytrion.ca/wp-content/uploads/2024/11/PXL_20241125_140811386-1024x789.jpg",
+
+  digitalWireframes:
+    "https://mytrion.ca/wp-content/uploads/2024/11/Screenshot-2024-11-23-at-22.11.48-1024x387.png",
+
+  highFidelity:
+    "https://mytrion.ca/wp-content/uploads/2024/11/Screenshot-2024-11-23-at-15.50.50-1024x573.jpg",
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{project.title} | Portfolio Case Study</title>
+    <meta
+      name="description"
+      content="Portfolio case study for BL’s Little Free Pantries, a WordPress website designed and developed to centralize information, improve communication, and support community engagement."
+    />
+  </head>
+
+  <body>
+    <main class="case-study">
+      <a href="../" class="back-link">← Back to Portfolio</a>
+
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Portfolio Case Study</p>
+          <h1>{project.title}</h1>
+
+          <p class="hero__text">
+            A user-focused WordPress website designed and developed for a
+            volunteer-driven organization providing free food, clothing, and
+            essential items to people in need.
+          </p>
+
+          <div class="meta-grid">
+            <div>
+              <span>Role</span>
+              <strong>{project.role}</strong>
+            </div>
+
+            <div>
+              <span>Team</span>
+              <strong>{project.team}</strong>
+            </div>
+
+            <div>
+              <span>Tools</span>
+              <strong>{project.tools}</strong>
+            </div>
+
+            <div>
+              <span>Release</span>
+              <strong>{project.release}</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img
+            src={images.hero}
+            alt="BL’s Little Free Pantries project mockup"
+          />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="tags">
+          {skills.map((skill) => <span>{skill}</span>)}
+        </div>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <p class="eyebrow">Project Story</p>
+          <h2>My Story with BL’s Little Free Pantries</h2>
+        </div>
+
+        <div class="content">
+          <p>
+            BL’s Little Free Pantries is a volunteer-driven organization that
+            provides free food, clothing, and essential items to those in need.
+            Many users struggled to find clear information about food
+            distribution, volunteering, donations, and partnership
+            opportunities.
+          </p>
+
+          <p>
+            Guided by BL’s team, I designed and developed a user-friendly
+            WordPress website to centralize important information, streamline
+            donations, highlight partnerships, and reduce repetitive messages
+            for the leadership team.
+          </p>
+        </div>
+      </section>
+
+      <section class="section cards-section">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>Project Overview</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            Following user-centered design principles, I collaborated closely
+            with the organization’s leadership to ensure the website aligned
+            with their mission and provided a centralized platform for key
+            information and user interaction.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Key Contributions</h3>
+
+          <ul>
+            <li>
+              Conducted research on user needs and organizational challenges.
+            </li>
+            <li>Created wireframes and prototypes for the website.</li>
+            <li>Designed a responsive and accessible user interface.</li>
+            <li>
+              Built the website on WordPress, ensuring scalability and ease of
+              use for non-technical team members.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Understanding the User</h2>
+        </div>
+
+        <div class="content content--wide">
+          <p>
+            The website was created to address communication gaps and simplify
+            the process for different types of users. Through user segment
+            analysis, three key groups were identified: individuals seeking food
+            assistance, volunteers, and sponsors.
+          </p>
+        </div>
+
+        <div class="goal-grid">
+          <article class="small-card">
+            <h3>Food Recipients</h3>
+            <p>
+              Needed quick and easy access to clear information about
+              distribution times, locations, and guidelines.
+            </p>
+          </article>
+
+          <article class="small-card">
+            <h3>Volunteers</h3>
+            <p>
+              Needed straightforward ways to learn about opportunities to help
+              and understand the value of their contribution.
+            </p>
+          </article>
+
+          <article class="small-card">
+            <h3>Sponsors & Partners</h3>
+            <p>
+              Needed visibility, acknowledgment, and transparency around how
+              their support created impact.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Challenges</p>
+          <h2>Pain Points</h2>
+        </div>
+
+        <div class="goal-grid">
+          <article class="small-card">
+            <h3>Lack of Clear Information</h3>
+            <ul>
+              <li>
+                Food recipients could not easily find distribution details.
+              </li>
+              <li>Volunteers lacked guidance on how to help.</li>
+              <li>Sponsors did not know how to support the organization.</li>
+            </ul>
+          </article>
+
+          <article class="small-card">
+            <h3>Communication Challenges</h3>
+            <ul>
+              <li>Important updates were getting lost on Facebook.</li>
+              <li>
+                Non-Facebook users missed key information, limiting engagement.
+              </li>
+            </ul>
+          </article>
+
+          <article class="small-card">
+            <h3>Overwhelmed Leadership</h3>
+            <ul>
+              <li>
+                Leadership received repeated questions about volunteering,
+                donating, food access, and events.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process">
+        <div class="section-heading">
+          <p class="eyebrow">Design Process</p>
+          <h2>From Research to Prototype</h2>
+        </div>
+
+        <div class="process__item">
+          <span>01</span>
+          <div>
+            <h3>Design Ideation</h3>
+            <p>
+              I gathered insights from user research and organized them visually
+              to identify the most important website elements. The user journey
+              was mapped for food recipients, volunteers, and sponsors.
+            </p>
+          </div>
+        </div>
+
+        <div class="process__item">
+          <span>02</span>
+          <div>
+            <h3>Information Architecture</h3>
+            <p>
+              I developed the site structure to give food recipients,
+              volunteers, and sponsors easy access to the information they
+              needed most.
+            </p>
+          </div>
+        </div>
+
+        <div class="process__item">
+          <span>03</span>
+          <div>
+            <h3>Wireframes</h3>
+            <p>
+              I started with paper sketches to explore layout ideas, then moved
+              into digital wireframes to define page structure and
+              functionality.
+            </p>
+          </div>
+        </div>
+
+        <div class="process__item">
+          <span>04</span>
+          <div>
+            <h3>High-Fidelity Prototype</h3>
+            <p>
+              I created realistic design mockups for testing, presentation, and
+              final development direction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact">
+        <p class="eyebrow">Impact</p>
+        <h2>A central hub for community support</h2>
+
+        <p>
+          The final website was designed to streamline communication and improve
+          access to information for food recipients, volunteers, and sponsors.
+          It gives the organization a central place to share food distribution
+          schedules, volunteer opportunities, donation information, and
+          sponsorship details.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  :root {
+    --color-bg: #f7f7f3;
+    --color-surface: #ffffff;
+    --color-surface-soft: #f0f2ec;
+    --color-text: #1d211c;
+    --color-muted: #667064;
+    --color-primary: #557c55;
+    --color-primary-dark: #324d34;
+    --color-border: #dfe5dc;
+    --color-shadow: rgba(29, 33, 28, 0.08);
+
+    --font-main:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+
+    --container: 1120px;
+    --radius-sm: 14px;
+    --radius-md: 24px;
+    --radius-lg: 36px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(85, 124, 85, 0.16),
+        transparent 32rem
+      ),
+      var(--color-bg);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .case-study {
+    width: min(100% - 2rem, var(--container));
+    margin: 0 auto;
+    padding: 2rem 0 5rem;
+  }
+
+  .back-link {
+    display: inline-flex;
+    margin-bottom: 2rem;
+    color: var(--color-muted);
+    font-weight: 700;
+  }
+
+  .back-link:hover {
+    color: var(--color-primary-dark);
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .hero__content,
+  .hero__image,
+  .card,
+  .small-card,
+  .process__item,
+  .impact {
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 24px 60px var(--color-shadow);
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: var(--radius-lg);
+    padding: clamp(2rem, 5vw, 4rem);
+  }
+
+  .eyebrow {
+    margin: 0 0 0.85rem;
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    max-width: 760px;
+    margin-bottom: 1.4rem;
+    font-size: clamp(2.8rem, 7vw, 6.4rem);
+    line-height: 0.92;
+    letter-spacing: -0.075em;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+  h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    letter-spacing: -0.025em;
+  }
+
+  p,
+  li {
+    color: var(--color-muted);
+    line-height: 1.75;
+  }
+
+  .hero__text {
+    max-width: 650px;
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+  }
+
+  .hero__image {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .meta-grid div {
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-soft);
+  }
+
+  .meta-grid span {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--color-muted);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .meta-grid strong {
+    font-size: 0.98rem;
+  }
+
+  .section {
+    padding-top: 5rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+
+  .tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-primary-dark);
+    background: var(--color-surface);
+    font-weight: 800;
+  }
+
+  .two-column {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 2rem;
+  }
+
+  .content {
+    max-width: 760px;
+  }
+
+  .content--wide {
+    max-width: 920px;
+  }
+
+  .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-heading {
+    max-width: 760px;
+    margin-bottom: 1.5rem;
+  }
+
+  .cards-section {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .card,
+  .small-card,
+  .process__item,
+  .impact {
+    border-radius: var(--radius-md);
+    padding: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .card ul,
+  .small-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .goal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .small-card {
+    background: var(--color-surface);
+  }
+
+  .process {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .process__item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  .process__item span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: var(--color-primary);
+    font-weight: 900;
+  }
+
+  .process__item p {
+    margin-bottom: 0;
+  }
+
+  .impact {
+    margin-top: 5rem;
+    color: #ffffff;
+    background:
+      linear-gradient(135deg, rgba(50, 77, 52, 0.94), rgba(85, 124, 85, 0.92)),
+      var(--color-primary-dark);
+  }
+
+  .impact .eyebrow,
+  .impact p {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .impact h2 {
+    max-width: 760px;
+    color: #ffffff;
+  }
+
+  .impact p {
+    max-width: 860px;
+    margin-bottom: 0;
+    font-size: 1.08rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero,
+    .two-column,
+    .goal-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero__image {
+      min-height: 320px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .case-study {
+      width: min(100% - 1rem, var(--container));
+      padding-top: 1rem;
+    }
+
+    .hero__content,
+    .card,
+    .small-card,
+    .process__item,
+    .impact {
+      padding: 1.2rem;
+    }
+
+    .meta-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .process__item {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
