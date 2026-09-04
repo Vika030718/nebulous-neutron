@@ -1,46 +1,53 @@
-# Astro Starter Kit: Basics
+# Viktoriia Matviieva — Web Developer Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+A web development portfolio built with Astro, showcasing recent WordPress projects, front-end development work, and detailed project case studies.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[View Live Portfolio](https://vika030718.github.io/nebulous-neutron/)
 
-## 🚀 Project Structure
+## About
 
-Inside of your Astro project, you'll see the following folders and files:
+This portfolio presents selected examples of my work across WordPress and modern front-end development.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+My recent work focuses on building and maintaining responsive websites from planning and design through development, testing, optimization, and launch.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+The portfolio includes project overviews as well as more detailed case studies covering design decisions, development work, and project outcomes.
 
-## 🧞 Commands
+## Tech Stack
 
-All commands are run from the root of the project, from a terminal:
+- Astro
+- HTML5
+- CSS
+- JavaScript
+- WordPress
+- GitHub Pages
+- GitHub Actions
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Highlights
 
-## 👀 Want to learn more?
+- Responsive portfolio interface
+- Astro-based static site architecture
+- Project showcases for recent web development work
+- Detailed project case studies
+- Responsive layouts for desktop, tablet, and mobile
+- SEO-focused metadata and page structure
+- Automated deployment to GitHub Pages
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Featured Case Studies
+
+The portfolio includes detailed project case studies covering areas such as:
+
+- WordPress development
+- UX/UI design
+- Responsive implementation
+- Information architecture
+- SEO
+- Content development
+- Website performance
+- Client and team collaboration
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
